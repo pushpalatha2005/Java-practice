@@ -1,0 +1,39 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class compare {
+        public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" Enter the first number:");
+        int num1 = scanner.nextInt();
+        System.out.println("Enter the second num:");
+        int num2 = scanner.nextInt();
+        System.out.println(num1 +"<" + num2 + "is" + (num1<num2));
+        System.out.println(num1 +"<=" + num2 + "is" + (num1<=num2));
+        System.out.println(num1 +">" + num2 + "is" + (num1>num2));
+        System.out.println(num1 +">=" + num2 + "is" + (num1>=num2));
+        System.out.println(num1 +"==" + num2 + "is" + (num1==num2));
+        System.out.println(num1 +"!=" + num2 + "is" + (num1!=num2));
+        scanner.close();    
+}
+}
+
+
+OUTPUT:
+Enter the first number:
+15
+Enter the second number:
+20
+15<20 is true
+15<=20 is true
+15>20 is false
+15>=20 is false
+15==20 is false
+15!=20 is true
+
+
+DEESCRIPTION:
+This program is used to compare two numbers using different operators which prints the output in boolean.
+The user input has been read and according to the operators it checks the condition and prints the output whether the condition satisfies or not.
+if the condition is satisfied it prints "True" else it prints "False".
