@@ -1,0 +1,39 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class findbiggernumber {
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" Enter the first number:");
+        int num1 = scanner.nextInt();
+        System.out.println("Enter the second num:");
+        int num2 = scanner.nextInt();
+        if (num1>num2){
+        System.out.println(num1 + "is the Bigger");
+        }
+        
+        else if(num2>num1)
+        {
+        System.out.println(num2 + "is the Bigger");
+        }
+        else {
+            System.out.println(num1 + "and" + num2 + "are equal");
+        }
+    }
+}   
+
+
+OUTPUT:
+Enter the first number:
+12
+Enter the second num:
+6
+12 is the Bigger
+
+
+DESCRIPTION:
+This program isused to find the bigger number between two numbers.
+The number is found between the two numbers which has been entered by the user.
+it compares the two numbers and displays the bigger number in the output by using print statement "System.out.println()".
+
