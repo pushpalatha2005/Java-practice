@@ -1,0 +1,30 @@
+PROGRAM:
+
+import java.util.Scanner;
+
+public class ternary {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the three numbers:");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+        int largest = (num1 > num2 ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3));
+        System.out.println("The largest number is :" + largest);
+        sc.close();
+}
+}
+
+
+OUTPUT:
+Enter the three numbers:
+12
+3
+7
+The largest number is :12
+
+
+DESCRIPTION:
+This is a program to find the largest number among three numbers using ternary operators "?" and ":".
+it prints the output by using print statement.
