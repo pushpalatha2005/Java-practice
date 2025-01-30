@@ -1,0 +1,30 @@
+PROGRAM:
+
+import java.util.Scanner;
+
+public class lettercomparison {
+    public static void main(String[] args)
+    {
+        char A = 'A', B = 'B';
+        System.out.println("'A' < 'B':" + (A < B));
+        System.out.println("'A' <= 'B':" + (A <= B));
+        System.out.println("'A' > 'B':" + (A > B));
+        System.out.println("'A' >= 'B':" + (A >= B));
+        System.out.println("'A' == 'B':" + (A == B));
+        System.out.println("'A' != 'B':" + (A != B));    
+}
+}
+
+
+OUTPUT:
+'A' < 'B':true
+'A' <= 'B':true
+'A' > 'B':false
+'A' >= 'B':false
+'A' == 'B':false
+'A' != 'B':true
+
+
+DESCRIPTION:
+This is a simple program which compares the two char 'A' and 'B' by using different operators and prints whether the given condition satisfies it prints "True"
+otherwise it prints "False".
