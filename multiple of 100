@@ -1,0 +1,31 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class multipleof100 {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the num: ");
+        int num = sc.nextInt();
+        if (num % 100 == 0){
+            System.out.println(+ num + " is a multiple of 100");
+        }
+        else{
+            System.out.println(+ num + " is not a multiple of 100");
+        }
+        sc.close();
+        }
+    }
+
+
+OUTPUT:
+Enter the num: 
+100
+100 is a multiple of 100
+Enter the num: 
+59
+59 is not a multiple of 100
+
+
+DESCRIPTION:
+This is a simple program to find whether a given number is multiple of 100 or not.
+If the entered num is multiple og 100 means it prints "the number is a multiple of 100" else it prints "the number is not a multiple of 100".
