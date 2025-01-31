@@ -1,0 +1,30 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class multipleof27 {
+    public static void main(String[] args){
+        System.out.println("Enter the number: ");
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        if(num %27==0){
+            System.out.println(+ num + "is a multiple of 27");
+        }
+        else{
+            System.out.println(+ num + "is not a multiple of 27");
+        }
+        sc.close();
+        }
+    }
+
+
+OUTPUT:
+Enter the number: 
+81
+81 is a multiple of 27
+Enter the number: 
+67
+67 is not a multiple of 27
+
+DESCRIPTION:
+This is the simple program to check whether a given number is a multiple of 27 or not.
+if the condition satisfies to check whether the given number is multiple of 27 it prints "the number is a multiple of 27" else it prints "the number isnot a multiple of 27".
