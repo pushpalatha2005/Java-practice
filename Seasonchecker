@@ -1,0 +1,35 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class Seasonchecker {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);     
+        System.out.print("Enter the month (1-12): ");
+        int month = sc.nextInt();
+        if (month >= 3 && month <= 5) {
+            System.out.println ("Spring Season");
+        } else if (month >= 6 && month <= 8) {
+            System.out.print("Summer Season");
+        } else if (month >= 9 && month <= 11) {
+            System.out.print("Autumn Season");
+        } else if (month >= 12 && month <= 1) {
+            System.out.print("Winter Season");
+        } else {
+            System.out.print("Invalid month! Please enter a value between 1 and 12.");
+        }           
+        sc.close();
+    }
+}
+
+OUTPUT:
+Enter the month (1-12): 5
+Spring Season
+Enter the month (1-12): 11
+Autumn Season
+Enter the month (1-12): 7
+Summer Season
+Enter the month (1-12): 1
+Winter Season
+
+DESCRIPTION:
+This is a simple program to find the season of a month by entering the number of the month it will check the month and then prints the appropriate output for the program.
