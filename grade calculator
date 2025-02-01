@@ -1,0 +1,45 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class grade {
+    public static void main(String[] args){
+        System.out.println("Enter your mark: ");
+        Scanner sc = new Scanner(System.in);
+        int mark = sc.nextInt();
+        if(mark>=90 && mark<=100){
+            System.out.println("grade is 'A'");
+        }
+        else if(mark >= 80){
+            System.out.println("grade is 'B'");
+        }
+        else if(mark >=70){
+            System.out.println("grade is:'C'");
+        }
+        else if(mark >= 60){
+            System.out.println("grade is 'D'");
+        }
+        else if(mark >=50){
+            System.out.println("grade is 'E'");
+        }
+        else if(mark >=0){
+            System.out.println("grade is 'F'");
+        }
+        else{
+            System.out.println("Invalid Input! please enter your mark between 0 to 100.");
+        }
+        }
+        }
+
+
+OUTPUT:
+Enter your mark: 
+96
+grade is 'A'
+Enter your mark: 
+85
+grade is 'B'
+
+
+DESCRIPTION:
+This is a simple program to calculate the grade for your mark.
+the condition has been checked and the grade for the appropriate entered mark has been printed.
