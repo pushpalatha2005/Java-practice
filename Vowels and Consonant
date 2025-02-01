@@ -1,0 +1,31 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class vowels {
+    public static void main(String[] args){
+        System.out.println("Enter a ch: ");
+        Scanner sc=new Scanner(System.in);
+        char ch = sc.next().toLowerCase().charAt(0);
+        if(Character.isLetter(ch)){
+            if(ch =='a'||ch =='e'||ch =='i'||ch =='o'||ch =='u'){
+            System.out.println( ch + " is a vowel.");}
+            else{
+                System.out.println( ch +" is a consonant.");
+            }      
+            }
+        }
+    }
+
+
+OUTPUT:
+Enter a ch: 
+a
+a is a vowel.
+Enter a ch: 
+k
+k is a consonant.
+
+
+DESCRIPTION:
+This is a simple program to find a char whether it is a 'vowel' or 'consonant'.
+if we enter the char in uppercase letter it coverts the char into lowercase letter and then it checks whether the char is 'vowel' or 'consonant' and prints the output.
