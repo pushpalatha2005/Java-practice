@@ -1,0 +1,95 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class switchcase {
+    public static void main(String[] args){
+        System.out.println("Enter first number:  ");
+        Scanner sc = new Scanner(System.in);
+        double num1 = sc.nextDouble();
+        System.out.println("Enter second number:  ");
+        double num2 = sc.nextDouble();
+        System.out.println("Enter your choice:");
+        System.out.println("1. Addition(+)");
+        System.out.println("2. Subtraction(-)");
+        System.out.println("3. Multiplication(*)");
+        System.out.println("4. Division(/)");
+
+        int choice=sc.nextInt();
+        double result;
+        switch(choice){
+            case 1:
+            {
+                result= num1+num2;
+                System.out.println("Addition: " + result);
+                break;
+            }
+            case 2:
+            {
+                result = num1 - num2;
+                System.out.println("Subtraction: " + result);
+                break;
+            }
+            case 3:
+            {
+                result = num1 * num2;
+                System.out.println("Multiplication: " + result);
+                break;
+            }
+            case 4:
+            {
+                if (num2 !=0){
+                    result = num1/num2;
+                    System.out.println("Division: " + result);
+                }
+                else{
+                    System.out.println("Error: division by zero is not allowed");
+                }
+                break;
+            }
+            default:
+            System.out.println("Invalid Choice please enter your choice between 1 to 4");
+            sc.close();
+                }
+
+                }
+            }
+
+
+OUTPUT:
+Enter first number:  
+5
+Enter second number:  
+8
+Enter your choice:
+1. Addition(+)
+2. Subtraction(-)
+3. Multiplication(*)
+4. Division(/)
+1
+Addition: 13.0
+Enter first number:  
+10
+Enter second number:
+6
+Enter your choice:
+1. Addition(+)
+2. Subtraction(-)
+3. Multiplication(*)
+4. Division(/)
+2
+Subtraction: 4.0
+
+DESCRIPTION:
+This is a sample program to calculate addition, subtraction, multiplication and division by using switchcase.
+this is performed by entering two numbers and select the choice to perform operation for your entered input.
+after choosing the choice it performs the operation and prints the output.
+the error message will be displayed if you enter the choice incorrectly and then your num2 value is 0 in the division operation.
+            
+
+
+
+
+
+
+
+    
