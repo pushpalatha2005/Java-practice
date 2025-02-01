@@ -1,0 +1,41 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class printstatement {
+    public static void main(String[] args){
+        System.out.println("Enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if(num%2==0 && num%4==0){
+            System.out.println("Good morning");
+        }
+        else if(num%2==0){
+            System.out.println("Good Afternoon");
+        }
+        else if(num%4==0){
+            System.out.println("Good Evening");
+        }
+        else{
+            System.out.println("Good Night");
+        }
+        sc.close();
+        }
+        }
+
+
+OUTPUT:
+Enter a number: 
+8
+Good morning
+Enter a number: 
+6
+Good Afternoon
+Enter a number: 
+3
+Good Night
+
+
+DESCRIPTION:
+This is program which prints the statement according to the conditions if the number is divided by both 2 and 3 it prints the statement "Good Morning".
+else if if the number is only divided by 2 then it prints the statement "Good Afternoon" or if the number is only divided by 4 then it prints the statement "Good Evening".
+else it prints "Good Night".
