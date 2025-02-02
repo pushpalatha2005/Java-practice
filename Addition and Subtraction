@@ -1,0 +1,28 @@
+PROGRAM:
+
+import java.util.Scanner;
+public class addsub {
+    public static void main(String[] args){
+        System.out.println("Enter two numbers:");
+        Scanner sc=new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        int addition= num1+num2;
+        int subtraction= Math.abs (num1-num2);
+        System.out.println("Addition of " +num1 +"and" +num2 +"is" +addition); 
+        System.out.println("Subtraction of " +num1 +"and" +num2 +"is" +subtraction); 
+        sc.close();
+    }
+}
+
+
+OUTPUT:
+Enter two numbers:
+4
+5
+Addition of 4 and 5 is 9
+Subtraction of 4 and 5 is 1
+
+DESCRIPTION:
+This is simple program to perform both addition and subtraction of two numbers which has been entered by the user.
+it displays the output of the Addition and Subtraction of two if the result of the subtraction is in the negative values it displays as positive value.
