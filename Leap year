@@ -1,0 +1,29 @@
+PROGRAM:
+
+import java .util.Scanner;
+public class leapyear {
+    public static void main(String[] args){
+        System.out.println("Enter year:");
+        Scanner sc = new Scanner (System.in);
+        int year = sc.nextInt();
+        if (year%4==0 || year%400==0){
+            System.out.println(+ year + "is a Leap year");
+        }
+        else{
+            System.out.println(+ year + "is not a Leap year");
+        }
+        sc.close();
+        }
+    }
+
+OUTPUT:
+Enter year:
+2008
+2008 is a Leap year
+Enter year:
+2015
+2015 is a Leap year
+
+DESCRIPTION:
+This is a simple program to check whether a entered year is a leap year or not.
+if the entered year is divisible by 4 and 400 then the year is declared as leap year.
